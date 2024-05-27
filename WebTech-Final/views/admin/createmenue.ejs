@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+    
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="apibody">
+    <form action="/menue" method="POST" class="container">
+        <div class="menueItem">
+            <input type="hidden" id="updateId">
+            <div class="input-wrapper">
+                <label for="title">Menue Name:</label>
+                <input type="text" name="title" id="title" placeholder="Enter Recipie Name" autocomplete="off"
+                    class="input-field">
+            </div>
+            <label for="description">Description:</label>
+            <textarea name="description" id="content" placeholder="Enter Recipie Description" autocomplete="off"
+                class="input-field"></textarea>
+            <div class="input-wrapper">
+                <label for="title">Price:</label>
+                <input type="text" name="title" id="title" placeholder="Enter Recipie Name" autocomplete="off"
+                    class="input-field">
+            </div>
+            <div class="addupdatebtn">
+                <button type="submit" class="btn btn-secondary" id="addBtn">
+                    <span class="text text-1">Add New Recipie</span>
+
+                    <span class="text text-2" aria-hidden="true">Add New Recipie</span>
+
+                </button>
+            </div>
+            <a href="/menue">Back to Menu</a>
+        </div>
+    </form>
+    <form action="/menu/<%= item._id %>?_method=DELETE" method="POST" style="display:inline;">
+        <button type="submit">Delete</button>
+    </form>
+
+
+</body>
+
+</html>

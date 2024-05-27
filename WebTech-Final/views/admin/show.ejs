@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= menuItem.name %></title>
+</head>
+<body>
+    <h1><%= menuItem.name %></h1>
+    <p><%= menuItem.description %></p>
+    <p>$<%= menuItem.price %></p>
+    
+    <a href="/menu/<%= menuItem._id %>/edit">Edit</a>
+    <a href="/menue">Back to Menu</a>
+</body>
+</html>
