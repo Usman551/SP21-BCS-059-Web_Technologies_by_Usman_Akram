@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="apibody" style="height: 30vh;">
+    <div class="container"  >
+        <div style="margin: 15px 40% ;">
+            <h1>Signup Form</h1>
+        </div>
+        <form action="/signup" method="POST" class="container" style="padding-left: 20%; padding-right: 20%;">
+            <div class="menueItem">
+
+                <div class="input-wrapper">
+                    <label for="username">User Name:</label>
+                    <input type="text" name="username" id="title" placeholder="Enter Your Name" autocomplete="off"
+                        class="input-field">
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="title" placeholder="Enter Your Email" autocomplete="off"
+                        class="input-field">
+                </div>
+                <div class="input-wrapper">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="title" placeholder="Enter Your Password" autocomplete="off"
+                        class="input-field" required>
+                </div>
+                <div class="addupdatebtn">
+                    <button type="submit" class="btn btn-secondary" id="addBtn">
+                        <span class="text text-1">Sign Up</span>
+
+                        <span class="text text-2" aria-hidden="true">Sign Up</span>
+
+                    </button>
+                    <p>Already have an account? <a style="color: rgb(255, 223, 183);" href="/user/login">Login here</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
