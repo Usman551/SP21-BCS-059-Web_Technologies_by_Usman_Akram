@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="apibody" >
+    <div style="margin: 55px 40% 15px ;">
+        <h1>Admin Panel</h1>
+    </div>
+    <a href="/logout" class="btn btn-secondary" style="float: right; margin-bottom: 10px; margin-right: 60px;">
+        <span class="text text-1">Logout</span>
+
+        <span class="text text-2" aria-hidden="true">Logout</span>
+    </a>
+    <div class="container">
+        <form action="/admin/menu/create" method="POST" class="container">
+            <div class="menueItem">
+                <input type="hidden" id="updateId">
+                <div class="input-wrapper">
+                    <label for="name">Menue Name:</label>
+                    <input type="text" name="name" id="title" placeholder="Enter Menue Name" autocomplete="off"
+                        class="input-field" required>
+                </div>
+                <label for="description">Description:</label>
+                <textarea name="description" id="content" placeholder="Enter Menue Description" autocomplete="off"
+                    class="input-field" required></textarea>
+                <div class="input-wrapper">
+                    <label for="price">Price:</label>
+                    <input type="text" name="price" id="title" placeholder="Enter Menue Name" autocomplete="off"
+                        class="input-field" required>
+                </div>
+                <div class="addupdatebtn">
+                    <button type="submit" class="btn btn-secondary" id="addBtn">
+                        <span class="text text-1">Add New Menue</span>
+
+                        <span class="text text-2" aria-hidden="true">Add New Menue</span>
+
+                    </button>
+                    <a href="/allmenue" class="btn btn-primary">
+                        <span class="text text-1">Get All Menue</span>
+    
+                        <span class="text text-2" aria-hidden="true">Get All Menue</span>
+                    </a>
+                </div>
+            </div>
+        </form>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>

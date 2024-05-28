@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restful Api Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/javascripts/jqcrud.js"></script>
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="apibody">
+    <div class="container">
+        <div class="menueItem">
+            <input type="hidden" id="updateId">
+            <div class="input-wrapper">
+                <label for="title">Recipie Name:</label>
+                <input type="text" name="title" id="title" placeholder="Enter Recipie Name" autocomplete="off"
+                    class="input-field" required>
+            </div>
+            <label for="description">Description:</label>
+            <textarea name="description" id="content" placeholder="Enter Recipie Description" autocomplete="off"
+                class="input-field" required></textarea>
+
+            <div class="addupdatebtn">
+                <button type="submit" class="btn btn-secondary" id="addBtn">
+                    <span class="text text-1">Add New Recipie</span>
+
+                    <span class="text text-2" aria-hidden="true">Add New Recipie</span>
+
+                </button>
+
+                <button type="submit" class="btn btn-primary" id="updatebtn">
+
+                    <span class="text text-1">Update</span>
+
+                    <span class="text text-2" aria-hidden="true">Update</span>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div id="recipiesList">
+            Loading...
+        </div>
+    </div>
+
+
+</body>
+
+</html>

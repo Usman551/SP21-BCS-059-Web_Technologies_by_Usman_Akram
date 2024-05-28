@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Admin Login
+    </title>
+
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="apibody" style="height: 30vh;">
+    <div class="container"  >
+        <div style="margin: 35px 37% 15px ;">
+            <h1>Admin Login Form</h1>
+        </div>
+        <form action="/admin" method="POST" class="container" style="padding-left: 20%; padding-right: 20%;">
+            <div class="menueItem">
+
+                <div class="input-wrapper">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="title" placeholder="Enter Your Email" autocomplete="off"
+                        class="input-field">
+                </div>
+                <div class="input-wrapper">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="title" placeholder="Enter Your Password" autocomplete="off"
+                        class="input-field">
+                </div>
+                <div class="addupdatebtn">
+                    <button type="submit" class="btn btn-secondary" id="addBtn">
+                        <span class="text text-1">Admin Login</span>
+
+                        <span class="text text-2" aria-hidden="true">Admin Login</span>
+
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
