@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-delete</title>
+
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="apibody" style="overflow: hidden;">
+    <div style="margin: 55px 40% 15px ;">
+        <h1>Delete Menue</h1>
+    </div>
+    <div class="container">
+        <form action="/admin/menu/<%= menuItem._id %>/delete?_method=DELETE" method="POST" class="container">
+            <div class="menueItem">
+
+                <div class="input-wrapper">
+                    <label for="name">Menue Name:</label>
+                    <input type="text" name="name" id="title" value="<%= menuItem.name %>" autocomplete="off"
+                        class="input-field">
+                </div>
+                <div class="input-wrapper">
+                    <label for="description">Description:</label>
+                    <input type="text" name="description" id="title" value="<%= menuItem.description %>" autocomplete="off"
+                        class="input-field">
+                </div>
+                <div class="input-wrapper">
+                    <label for="price">Price:</label>
+                    <input type="text" name="price" id="title" value="<%= menuItem.price %>" autocomplete="off"
+                        class="input-field">
+                </div>
+                <div class="addupdatebtn">
+                    <button type="submit" class="btn btn-secondary" id="addBtn">
+                        <span class="text text-1">Delete Menue</span>
+
+                        <span class="text text-2" aria-hidden="true">Delete Menue</span>
+
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>
